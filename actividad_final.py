@@ -1,8 +1,12 @@
 import random
 class Movie:
+    """
+    La clase Movie es una abstracción de los objetos movie. Y está conformoda por los métodos título,
+    rank, like y dislike. 
+    """
     def __init__(self, titulo):
         self.rank = random.randint(0,10)
-        self.titulo = titulo.title()
+        self.titulo = titulo.title() # con la función title() se le asignan mayúsculas al inicio de cada palabra
         print("La película " + self.titulo + " fue puntuada con: " + str(self.rank) + " puntos por los críticos.")
     
     def get_rank(self):
